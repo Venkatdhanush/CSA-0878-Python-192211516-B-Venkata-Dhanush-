@@ -1,0 +1,12 @@
+def number_to_word(n):
+    words = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"]
+    return words[n]
+try:
+    digit = int(input("Enter a single digit number: "))
+    if 0 <= digit <= 9:
+        print(number_to_word(digit))
+    else:
+        print("Please enter a single digit number.")
+except ValueError:
+    print("Invalid input. Please enter a numeric single digit.")
+
