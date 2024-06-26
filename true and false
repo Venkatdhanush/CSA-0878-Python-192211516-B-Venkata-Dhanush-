@@ -1,0 +1,10 @@
+def is_first_last_same(numbers):
+    if not numbers:
+        return False
+    return numbers[0] == numbers[-1]
+example_list = [1, 2, 3, 4, 1]
+result = is_first_last_same(example_list)
+print("The first and last numbers are the same:", result)
+example_list = [1, 2, 3, 4, 5]
+result = is_first_last_same(example_list)
+print("The first and last numbers are the same:", result)
